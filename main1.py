@@ -87,7 +87,7 @@ class Window(arcade.Window):
 
         self.set_mouse_visible(True)
 
-        arcade.set_background_color(open_color.black)
+        arcade.set_background_color(open_color.yellow_3)
 
         self.particle_list = arcade.SpriteList()
         self.mouse_down = False
@@ -110,7 +110,7 @@ class Window(arcade.Window):
             decay = random.uniform(PARTICLE_MIN_DECAY,PARTICLE_MAX_DECAY)
             scale = random.uniform(PARTICLE_MIN_SCALE,PARTICLE_MAX_SCALE)
             #Particle(asset, sprite scale, initial position [x], initial position [y], velocity [x], velocity [y], acceleration [x], acceleration [y], scale decay)
-            particle = Particle('circle_05',scale,x,y,dx,dy,ax,ay,decay)
+            particle = Particle('flame_03',scale,x,y,dx,dy,ax,ay,decay)
 
             self.particle_list.append(particle)
 
